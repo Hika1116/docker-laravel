@@ -1,0 +1,16 @@
+Docker学習メモ
+
+docker-compose.uml:
+(参考：https://qiita.com/zembutsu/items/9e9d80e05e36e882caaa)
+
+image,bulid
+　⇨　タグへImageIdで環境を構築。ローカルに存在しない場合はDockerHubからPullされる。
+　　　buildはDockerFileを参照し、ファイル内の内容で構築する。
+
+ volume
+   ⇨　Dockerコンテナ内のファイルをマウント（上書き・同期みたいなこと）をする
+  書き方： - 元のソースパス：Dockerコンテナ内のソースパス
+   参考：https://www.nyamucoro.com/entry/2018/08/13/222617
+
+environment
+　⇨　環境変数を追加
